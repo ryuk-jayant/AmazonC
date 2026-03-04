@@ -1,7 +1,6 @@
 import React,{useContext} from 'react'
 import { CartContext } from './cart'
 import Navbar from '../navbar'
-import { clear } from '@testing-library/user-event/dist/clear'
 import { SignContext } from '../Sign/Sign'
 import { useNavigate } from 'react-router-dom'
 export default function MyCart() {

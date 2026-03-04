@@ -23,7 +23,7 @@ export default function ProductPage() {
         const data=await resp.json()
         setjson(data)
     }
-    useEffect(()=>{fetch_data()},[])
+    useEffect(()=>{fetch_data()})
   return (
     <div>
       <Navbar/>
