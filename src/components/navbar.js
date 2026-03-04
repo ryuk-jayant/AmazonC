@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React,{useContext} from "react";
 import {Dropdowen_lang} from "./molecules/Dropdowen";
 import {Dropdowen_sign} from "./molecules/Dropdowen";

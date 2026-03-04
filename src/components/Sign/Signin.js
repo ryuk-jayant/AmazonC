@@ -2,12 +2,13 @@ import React,{useContext,useEffect, useState} from 'react'
 import { SignContext } from './Sign'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { GoogleLogin, useGoogleLogin } from '@react-oauth/google';
+import { useGoogleLogin } from '@react-oauth/google';
 import Navbar from '../navbar';
 import Itembar from '../itembar';
 export default function Signin() {
  
   const[login,setlogin]=useState([])
+  // eslint-disable-next-line no-unused-vars
   const[flag,setflag]=useState(false)
   const signme=useGoogleLogin({
     onSuccess: (codeResponse) => setlogin(codeResponse),
@@ -39,6 +40,7 @@ export default function Signin() {
                     .catch((err) => console.log(err));
             }
         },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         [ login ]
     );
 

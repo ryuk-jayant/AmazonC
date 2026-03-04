@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {RiStarSLine,RiStarSFill,RiStarHalfLine,RiStarHalfSLine} from "react-icons/ri"
+import {RiStarSLine,RiStarSFill} from "react-icons/ri"
 
 export default function star(props) {
     const rating=props.stars.rate;
